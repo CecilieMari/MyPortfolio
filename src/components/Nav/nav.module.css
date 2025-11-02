@@ -1,0 +1,19 @@
+nav {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.navbarBrand{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
