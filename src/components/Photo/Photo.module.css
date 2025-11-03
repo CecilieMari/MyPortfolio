@@ -1,0 +1,71 @@
+.photoContainer {
+  padding: 4rem 2rem;
+}
+
+.photoContainer h1 {
+  margin-bottom: 3rem;
+  font-family: 'Monserrat', serif;
+  font-size: 3rem;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.smallPhotoItem {
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.smallPhoto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.largePhotoItem {
+  height: 100%;
+}
+
+.largePhoto {
+  width: 100%;
+  height: auto; /* Høyde på de to små bildene + gap */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photoCaption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.photoCaption h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .leftColumn {
+    margin-bottom: 2rem;
+  }
+  
+  .smallPhoto {
+    height: 200px;
+  }
+  
+  .largePhoto {
+    height: 300px;
+  }
+  
+  .photoContainer h1 {
+    font-size: 2rem;
+  }
+}

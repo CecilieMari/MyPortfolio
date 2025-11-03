@@ -24,6 +24,14 @@ function Nav() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
+          {/* Cecilie - bare synlig på mobile */}
+          <Link className={`${styles.navbarBrand} mx-auto d-lg-none`} to="/">
+            Cecilie
+          </Link>
+
+          {/* Tom div for å balansere layout på mobile */}
+          <div className="d-lg-none" style={{ width: "42px" }}></div>
+
           <div
             className={`collapse navbar-collapse ${!isCollapsed ? "show" : ""}`}
             id="navbarNav"
@@ -33,7 +41,7 @@ function Nav() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/"
+                  to="/About"
                   onClick={() => setIsCollapsed(true)}
                 >
                   Meg
@@ -42,7 +50,7 @@ function Nav() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/About"
+                  to="/Web"
                   onClick={() => setIsCollapsed(true)}
                 >
                   Web
@@ -50,8 +58,11 @@ function Nav() {
               </li>
             </ul>
 
-            {/* Midten - Cecilie */}
-            <Link className={`${styles.navbarBrand} mx-auto`} to="/">
+            {/* Cecilie - bare synlig på desktop */}
+            <Link
+              className={`${styles.navbarBrand} mx-auto d-none d-lg-block`}
+              to="/"
+            >
               Cecilie
             </Link>
 
@@ -66,14 +77,36 @@ function Nav() {
                   Kontakt
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/Natur"
-                  onClick={() => setIsCollapsed(true)}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Visuelle Øyeblikk
-                </Link>
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/Photo/HostTur"
+                      onClick={() => setIsCollapsed(true)}
+                    >
+                      Høst tur
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/Photo/Vietnam"
+                      onClick={() => setIsCollapsed(true)}
+                    >
+                      Vietnam
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
