@@ -1,0 +1,151 @@
+.aboutmeContainer {
+  padding: 4rem 9rem;
+}
+
+.aboutmeContainer h1 {
+  position: relative;
+  font-family: 'Monserrat', serif;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.textContent {
+  padding-right: 2rem;
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.imageContent {
+  text-align: center;
+}
+
+.aboutImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  height: auto;
+}
+
+.videoContent {
+  text-align: center;
+}
+
+.aboutVideo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.videoTextContent {
+  padding-left: 2rem;
+}
+
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.videoTextContent p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.iconContainer {
+  padding-left: 2rem;
+}
+
+.iconRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.iconItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skillIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.iconTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.iconText {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+   .aboutmeContainer {
+  padding: 4rem 2rem;
+}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutmeContainer h1 {
+    font-size: 2rem;
+  }
+
+  .aboutmeContainer {
+  padding: 4rem 2rem;
+}
+  
+  .textContent {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .videoTextContent {
+    padding-left: 0;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .iconContainer {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  
+  .iconRow {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .iconItem {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skillIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
