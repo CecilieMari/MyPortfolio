@@ -77,36 +77,32 @@ function Nav() {
                   Kontakt
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/Photo"
+                  onClick={() => setIsCollapsed(true)}
                 >
                   Visuelle Øyeblikk
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/Photo/HostTur"
-                      onClick={() => setIsCollapsed(true)}
-                    >
-                      Høst tur
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/Photo/Vietnam"
-                      onClick={() => setIsCollapsed(true)}
-                    >
-                      Vietnam
-                    </Link>
-                  </li>
-                </ul>
+                </Link>
+              </li>
+                 <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/Photo/Vietnam"
+                  onClick={() => setIsCollapsed(true)}
+                >
+                  Vietnam
+                </Link>
+              </li>
+                 <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/Photo/HostTur"
+                  onClick={() => setIsCollapsed(true)}
+                >
+                  Høst Tur
+                </Link>
               </li>
             </ul>
           </div>
