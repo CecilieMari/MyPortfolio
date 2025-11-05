@@ -77,32 +77,38 @@ function Nav() {
                   Kontakt
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/Photo"
-                  onClick={() => setIsCollapsed(true)}
+              <li className="nav-item dropdown">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style={{ cursor: "pointer" }}
                 >
                   Visuelle Øyeblikk
-                </Link>
-              </li>
-                 <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/Photo/Vietnam"
-                  onClick={() => setIsCollapsed(true)}
-                >
-                  Vietnam
-                </Link>
-              </li>
-                 <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/Photo/HostTur"
-                  onClick={() => setIsCollapsed(true)}
-                >
-                  Høst Tur
-                </Link>
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/Photo/høstTur"
+                      onClick={() => setIsCollapsed(true)}
+                    >
+                      Høst Tur
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/Photo/vietnamBilder"
+                      onClick={() => setIsCollapsed(true)}
+                    >
+                      Vietnam
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
