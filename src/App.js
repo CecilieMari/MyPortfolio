@@ -2,7 +2,8 @@ import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Aboutme from "./components/Aboutme/Aboutme";
-import Photo from "./components/Photo/Photo";
+import Vietnam from "./components/Photo/Vietnam";
+import HøstTur from "./components/Photo/HøstTur";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<Aboutme />} />
-          <Route path="/Photo" element={<Photo />} />
+          <Route path="/Photo/Vietnam" element={<Vietnam />} />
+          <Route path="/Photo/HostTur" element={<HøstTur />} />
         </Routes>
       </Layout>
     </Router>
