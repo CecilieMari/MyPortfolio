@@ -90,7 +90,7 @@ function Home() {
             <div className="col-md-6">
               <div className={styles.imageContainer}>
                 <img
-                  src="/image/001-vietnam.jpg"
+                  src="/image/vietnam/001-vietnam.jpg"
                   alt="Portfolio bilde"
                   className={`img-fluid ${styles.portfolioImage}`}
                 />
