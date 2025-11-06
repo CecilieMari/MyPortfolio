@@ -51,7 +51,7 @@ function Home() {
           <div className="row">
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}>Web</h3>
+                <h3 className={styles.infoTitle}><a href="/web">Web</a></h3>
                 <p className={styles.infoText}>
                   Jeg har utdanning innen frontend-utvikling og elsker å
                   kombinere funksjon og estetikk.
@@ -60,7 +60,7 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}>Visuelle Øyeblikk</h3>
+                <h3 className={styles.infoTitle}><a href="/Photo/vietnamBilder">Visuelle Øyeblikk</a></h3>
                 <p className={styles.infoText}>
                   Jeg liker å fange lyset slik det fanger – følelsene,
                   stemningen og de små øyeblikkene som endrer seg med årstidene.
@@ -71,7 +71,7 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}>Kontak Meg</h3>
+                <h3 className={styles.infoTitle}><a href="/Kontakt">Kontak Meg</a></h3>
                 <p className={styles.infoText}>
                   Jeg er alltid åpen for nye samarbeid og kreative prosjekter.
                   Har du et prosjekt du tror jeg vil passe til, eller ønsker å

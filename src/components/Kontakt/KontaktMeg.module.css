@@ -1,0 +1,136 @@
+.kontaktContainer {
+  padding: 4rem 9rem;
+}
+
+.contactInfo {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.sectionTitle {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.sectionTitle a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Ny grid layout for kontaktinformasjon */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 2rem 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactLink {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.contactLink:hover {
+  transform: scale(1.1);
+}
+
+.contactIcon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.contactText {
+  text-align: center;
+}
+
+.contactText h4 {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.contactText a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contactText a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontaktContainer {
+    padding: 2rem 1rem;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .contactText h4 {
+    font-size: 1.1rem;
+  }
+  
+  .contactText a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactItem {
+    padding: 1rem;
+  }
+  
+  .contactText h4 {
+    font-size: 1rem;
+  }
+  
+  .contactText a {
+    font-size: 0.85rem;
+  }
+}
