@@ -2,10 +2,10 @@ import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Aboutme from "./components/Aboutme/Aboutme";
-import Vietnam from "./components/Photo/vietnamBilder";
+import VietnamBilder from "./components/Photo/vietnamBilder";
 import HøstTur from "./components/Photo/HøstTur";
-import KontaktMeg from "./Kontakt/KontaktMeg";
-
+import KontaktMeg from "./components/Kontakt/KontaktMeg";
+import Holidaz from "./components/Web/Holidaz";
 
 function App() {
   return (
@@ -14,10 +14,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<Aboutme />} />
-          <Route path="/Photo/vietnamBilder" element={<Vietnam />} />
+          <Route path="/Photo/vietnamBilder" element={<VietnamBilder />} />
           <Route path="/Photo/høstTur" element={<HøstTur />} />
           <Route path="/Kontakt" element={<KontaktMeg />} />
-        </Routes> 
+          <Route path="/Web" element={<Holidaz />} />
+        </Routes>
       </Layout>
     </Router>
   );

@@ -1,0 +1,110 @@
+.webContainer {
+    padding: 4rem 9rem;
+}
+
+/* Video styling - samme som home.js */
+.videoSection {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 5rem 0;
+}
+
+.fullWidthVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Project links styling */
+.projectLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.linkItem {
+    flex: 1;
+    text-align: left;
+}
+
+.linkLabel {
+    font-weight: 600;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.projectLink {
+    color: #0066cc;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.projectLink:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .webContainer {
+        padding: 3rem 4rem;
+    }
+    
+    .videoSection {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .webContainer {
+        padding: 2rem 1rem;
+    }
+    
+    .videoSection {
+        height: 40vh;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .projectLinks {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .linkItem {
+        text-align: center;
+    }
+
+    .projectLink {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .videoSection {
+        height: 35vh;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .projectLinks {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .projectLink {
+        font-size: 0.8rem;
+    }
+}

@@ -4,9 +4,41 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Aboutme() {
   return (
     <div className={Style.aboutmeContainer}>
-      <h1>
-        <span>The Story</span>
-      </h1>
+      {/* Header med samme stil som andre sider */}
+      <div className="magazine-header py-4 mb-4">
+        <h2
+          className="display-4 fw-light mb-3 lh-sm magazine-title"
+          style={{
+            letterSpacing: "0.02em",
+            borderLeft: "6px solid #222",
+            paddingLeft: "1rem",
+            fontFamily: "Georgia, serif",
+          }}
+        >
+          Om Meg
+        </h2>
+        <p
+          className="lead text-secondary magazine-intro"
+          style={{
+            maxWidth: "700px",
+            margin: "0.5rem 0 0 0",
+            fontStyle: "italic",
+            fontFamily: "Georgia, serif",
+          }}
+        >
+          En kreativ sjel med lidenskap for design, utvikling og visuell
+          historiefortelling. Utforsk min reise fra grafisk design og håndverk
+          til frontend-utvikling.
+        </p>
+        <hr
+          className="my-4"
+          style={{
+            borderTop: "2px solid #222",
+            width: "80px",
+            marginLeft: "0",
+          }}
+        />
+      </div>
 
       <div className="container-fluid">
         <div className="row align-items-center">
