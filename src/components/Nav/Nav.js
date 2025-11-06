@@ -71,7 +71,7 @@ function Nav() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/Portfolio"
+                  to="/Kontakt"
                   onClick={() => setIsCollapsed(true)}
                 >
                   Kontakt
