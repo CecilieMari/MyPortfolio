@@ -1,7 +1,10 @@
 {
-  "name": "my-portfolio-app",
+  "name": "cecilie-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Cecilie Maris Portfolio - Frontend Utvikler",
+  "author": "Cecilie Maris Monsen",
+  "homepage": "https://ceciliemmonsen.no",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

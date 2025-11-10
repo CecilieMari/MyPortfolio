@@ -45,8 +45,13 @@ function Holidaz() {
 
       {/* Video seksjon - samme som home.js */}
       <section className={styles.videoSection}>
-        <video className={styles.fullWidthVideo} controls>
-          <source src="/video/holidaz002.mp4" type="video/mp4" />
+        <video className={styles.fullWidthVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/video/holidaz.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>

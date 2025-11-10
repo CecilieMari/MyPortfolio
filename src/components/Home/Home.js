@@ -1,5 +1,6 @@
 import styles from "./home.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from 'react-router-dom'; // Legg til denne importen
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
           loop
           playsInline
         >
-          <source src="/video/hero-video.mp4" type="video/mp4" />
+          <source src="/video/may-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
@@ -51,7 +52,9 @@ function Home() {
           <div className="row">
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}><a href="/web">Web</a></h3>
+                <h3 className={styles.infoTitle}>
+                  <Link to="/web">Web</Link>
+                </h3>
                 <p className={styles.infoText}>
                   Jeg har utdanning innen frontend-utvikling og elsker å
                   kombinere funksjon og estetikk.
@@ -60,18 +63,22 @@ function Home() {
             </div>
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}><a href="/Photo/vietnamBilder">Visuelle Øyeblikk</a></h3>
+                <h3 className={styles.infoTitle}>
+                  <Link to="/Photo/vietnamBilder">Visuelle Øyeblikk</Link>
+                </h3>
                 <p className={styles.infoText}>
                   Jeg liker å fange lyset slik det fanger – følelsene,
                   stemningen og de små øyeblikkene som endrer seg med årstidene.
                   Fra høstens varme toner til vinterens ro og sommerens myke
-                  glød. Mer...
+                  glød.
                 </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className={styles.infoCard}>
-                <h3 className={styles.infoTitle}><a href="/Kontakt">Kontak Meg</a></h3>
+                <h3 className={styles.infoTitle}>
+                  <Link to="/Kontakt">Kontakt Meg</Link>
+                </h3>
                 <p className={styles.infoText}>
                   Jeg er alltid åpen for nye samarbeid og kreative prosjekter.
                   Har du et prosjekt du tror jeg vil passe til, eller ønsker å
@@ -91,7 +98,7 @@ function Home() {
               <div className={styles.imageContainer}>
                 <img
                   src="/image/vietnam/001-vietnam.jpg"
-                  alt="Portfolio bilde"
+                  alt="Kontor med mange papirer og mapper og en sykkel foran"
                   className={`img-fluid ${styles.portfolioImage}`}
                 />
               </div>
@@ -99,14 +106,14 @@ function Home() {
             <div className="col-md-6">
               <div className={styles.textContainer}>
                 <h3 className={styles.textTitle}>
-                  Everything starts with an idea!
+                  Alt starter med en idé
                 </h3>
                 <p className={styles.textContent}>
                   Jeg liker å utforske hvordan en idé kan vokse til noe visuelt
                   og meningsfullt. Gjennom lys, farger og form skaper jeg
                   uttrykk som formidler en følelse. For meg handler det om å
                   kombinere det estetiske med det funksjonelle å skape
-                  opplevelser som både inspirerer og føles ekte. Mer..
+                  opplevelser som både inspirerer og føles ekte.
                 </p>
               </div>
             </div>
