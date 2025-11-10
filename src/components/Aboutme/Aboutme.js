@@ -63,7 +63,7 @@ function Aboutme() {
             <div className={Style.imageContent}>
               <img
                 src="/image/_MG_5613.jpg"
-                alt="Cecilie Mari Monsen"
+                alt="Speilbilde av en person og kamera i et vindu"
                 className={`img-fluid ${Style.aboutImage}`}
               />
             </div>
@@ -87,7 +87,7 @@ function Aboutme() {
             </div>
           </div>
           <div className="col-md-6">
-            <div className={Style.videoTextContent}>
+            <div className={Style.textContent}>
               <h3 className={Style.sectionTitle}>Fotografi og inspirasjon</h3>
               <p>
                 Utenfor design og kode finner jeg stor glede i fotografering og
@@ -151,10 +151,14 @@ function Aboutme() {
                     alt="Instagram logo"
                     className={Style.skillIcon}
                   />
-                  <h4 className={Style.iconTitle}>Design</h4>
-                  <p className={Style.iconText}>
-                    Grafisk design og visuell identitet
-                  </p>
+                  <a
+                    href="https://www.instagram.com/ceciliemarim/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={Style.iconLink}
+                  >
+                    <h4 className={Style.iconTitle}>Instagram</h4>
+                  </a>
                 </div>
                 <div className={Style.iconItem}>
                   <img
@@ -162,10 +166,12 @@ function Aboutme() {
                     alt="Email icon"
                     className={Style.skillIcon}
                   />
-                  <h4 className={Style.iconTitle}>Utvikling</h4>
-                  <p className={Style.iconText}>
-                    Frontend-utvikling og responsivt design
-                  </p>
+                  <a
+                    href="mailto:ceciliemarimonse@gmail.com?subject=Henvendelse fra portfolio&body=Hei Cecilie,"
+                    className={Style.iconLink}
+                  >
+                    <h4 className={Style.iconTitle}>Kontakt meg</h4>
+                  </a>
                 </div>
                 <div className={Style.iconItem}>
                   <img
@@ -173,10 +179,14 @@ function Aboutme() {
                     alt="LinkedIn logo"
                     className={Style.skillIcon}
                   />
-                  <h4 className={Style.iconTitle}>Fotografi</h4>
-                  <p className={Style.iconText}>
-                    Visuell historiefortelling og naturbilder
-                  </p>
+                  <a
+                    href="https://www.linkedin.com/in/cecilie-monsen-b471662b7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={Style.iconLink}
+                  >
+                    <h4 className={Style.iconTitle}>LinkedIn</h4>
+                  </a>
                 </div>
               </div>
             </div>

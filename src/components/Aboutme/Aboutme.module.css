@@ -83,18 +83,21 @@
   object-fit: contain;
 }
 
-.iconTitle {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  color: #333;
-  margin: 0 0 0.5rem 0;
-}
-
 .iconText {
   font-size: 0.9rem;
   color: #666;
   margin: 0;
   line-height: 1.4;
+}
+.iconLink {
+  color: black;
+  text-decoration: none;
+}
+
+.iconTitle{
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
 }
 
 @media (max-width: 1000px) {
